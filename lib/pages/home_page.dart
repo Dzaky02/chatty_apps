@@ -1,6 +1,6 @@
 import 'package:chatty_apps/theme.dart';
 import 'package:flutter/material.dart';
-import '';
+import 'package:chatty_apps/widgets/chat_tile.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -49,38 +49,17 @@ class HomePage extends StatelessWidget {
                       'Friends',
                       style: titleTextStyle,
                     ),
-                    SizedBox(
-                      height: 16,
+                    ChatTile(
+                      imageURL: 'assets/images/pic_friend_1.png',
+                      name: 'Joshuer',
+                      textMessage: 'Sorry, you’re not my ty...',
+                      recieveTime: 'Now',
                     ),
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/images/pic_friend_1.png',
-                          height: 55,
-                          width: 55,
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Joshuer',
-                              style: titleTextStyle,
-                            ),
-                            Text(
-                              'Sorry, you’re not my ty...',
-                              style: unReadTextStyle,
-                            ),
-                          ],
-                        ),
-                        Spacer(),
-                        Text(
-                          'Now',
-                          style: subTitleTextStyle,
-                        ),
-                      ],
+                    ChatTile(
+                      imageURL: 'assets/images/pic_friend_2.png',
+                      name: 'Gabriella',
+                      textMessage: 'I saw it clearly and mig...',
+                      recieveTime: '2:30',
                     ),
                   ],
                 ),
