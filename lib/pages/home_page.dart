@@ -30,6 +30,61 @@ class HomePage extends StatelessWidget {
                 'Travel Freelancer',
                 style: userBioTextStyle,
               ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(30),
+                decoration: BoxDecoration(
+                  color: whiteColor,
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(40),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Friends',
+                      style: titleTextStyle,
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/images/pic_friend_1.png',
+                          height: 55,
+                          width: 55,
+                        ),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Joshuer',
+                              style: titleTextStyle,
+                            ),
+                            Text(
+                              'Sorry, you’re not my ty...',
+                              style: unReadTextStyle,
+                            ),
+                          ],
+                        ),
+                        Spacer(),
+                        Text(
+                          'Now',
+                          style: subTitleTextStyle,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
