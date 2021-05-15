@@ -6,8 +6,14 @@ class ChatTile extends StatelessWidget {
   final name;
   final textMessage;
   final recieveTime;
+  final bool isReaded;
 
-  ChatTile({this.imageURL, this.name, this.textMessage, this.recieveTime});
+  ChatTile(
+      {this.imageURL,
+      this.name,
+      this.textMessage,
+      this.recieveTime,
+      this.isReaded});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +38,7 @@ class ChatTile extends StatelessWidget {
               ),
               Text(
                 textMessage,
-                style: unReadTextStyle,
+                style: isReaded ? subTitleTextStyle : unReadTextStyle,
               ),
             ],
           ),
