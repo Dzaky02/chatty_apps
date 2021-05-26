@@ -83,6 +83,7 @@ class HomePage extends StatelessWidget {
                       ChatTile(
                         imageURL: 'assets/images/icon_group_1.png',
                         name: 'Jakarta Fair',
+                        totalMember: '14,209',
                         textMessage: 'Why does everyone ca...',
                         recieveTime: '11:11',
                         isReaded: true,
@@ -90,6 +91,7 @@ class HomePage extends StatelessWidget {
                       ChatTile(
                         imageURL: 'assets/images/icon_group_2.png',
                         name: 'Angga',
+                        totalMember: '10,029',
                         textMessage: 'Here here we can go...',
                         recieveTime: '7:11',
                         isReaded: false,
@@ -97,6 +99,7 @@ class HomePage extends StatelessWidget {
                       ChatTile(
                         imageURL: 'assets/images/icon_group_3.png',
                         name: 'Bentley',
+                        totalMember: '5,500',
                         textMessage: 'The car which does not...',
                         recieveTime: '7:11',
                         isReaded: false,
