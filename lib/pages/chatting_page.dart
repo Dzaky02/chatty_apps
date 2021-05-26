@@ -69,43 +69,50 @@ class ChattingPage extends StatelessWidget {
                 ],
               ),
             ),
+            Spacer(),
             Container(
               margin: const EdgeInsets.only(
                 bottom: 30,
                 left: 30,
                 right: 30,
               ),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(30),
+              ),
               child: Row(
                 children: [
                   Container(
                     width: 250,
                     child: TextField(
-                      obscureText: true,
                       decoration: InputDecoration(
-                        fillColor: Colors.white,
-                        suffix: Material(
-                          color: Colors.transparent,
-                          child: Ink(
-                            decoration: const ShapeDecoration(
-                              color: Color(0XFFEAEFF3),
-                              shape: CircleBorder(),
-                            ),
-                            child: IconButton(
-                              icon: Icon(Icons.send),
-                              color: Color(0XFF505C6B),
-                              onPressed: () {},
-                            ),
-                          ),
+                        border: InputBorder.none,
+                        focusedBorder: InputBorder.none,
+                        enabledBorder: InputBorder.none,
+                        errorBorder: InputBorder.none,
+                        disabledBorder: InputBorder.none,
+                        contentPadding: EdgeInsets.all(16),
+                        hintStyle: TextStyle(
+                          color: Color(0XFF999999),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300,
                         ),
-                        border: new OutlineInputBorder(
-                          borderRadius: new BorderRadius.circular(50),
+                        counterStyle: TextStyle(
+                          color: Color(0XFF505C6B),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300,
                         ),
-                        labelText: 'Password',
+                        hintText: 'Type message ...',
                       ),
                     ),
                   ),
                   InkWell(
-                    child: Image.asset('assets/images/btn_send.png'),
+                    onTap: () {},
+                    child: Image.asset(
+                      'assets/images/btn_send.png',
+                      width: 35,
+                      height: 35,
+                    ),
                   ),
                 ],
               ),

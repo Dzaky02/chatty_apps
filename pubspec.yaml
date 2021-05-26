@@ -55,6 +55,7 @@ flutter:
     - assets/images/icon_group_3.png
     - assets/images/btn_add.png
     - assets/images/btn_call.png
+    - assets/images/btn_send.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
