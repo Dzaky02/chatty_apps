@@ -1,6 +1,6 @@
+import 'package:chatty_apps/theme.dart';
 import 'package:chatty_apps/widgets/chatting_item.dart';
 import 'package:flutter/material.dart';
-import 'package:chatty_apps/theme.dart';
 
 class ChattingPage extends StatelessWidget {
   final imageURL;
@@ -47,7 +47,7 @@ class ChattingPage extends StatelessWidget {
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            Column(
+            ListView(
               children: [
                 // NOTE: HEADER
                 Container(
